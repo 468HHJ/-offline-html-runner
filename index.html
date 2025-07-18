@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Offline HTML Code Runner</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Offline HTML Code Runner</title>
 
-<!-- Google AdSense Script Added -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1320253292364792"
-     crossorigin="anonymous"></script>
+  <!-- ✅ Google AdSense Script (Head ke andar hona chahiye) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1320253292364792"
+    crossorigin="anonymous"></script>
 
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 10px;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  textarea {
-    width: 100%;
-    height: 35vh; /* viewport height for better mobile fit */
-    font-family: monospace;
-    font-size: 1rem;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  button {
-    display: block;
-    width: 100%;
-    padding: 12px 0;
-    font-size: 1.2rem;
-    margin-top: 12px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-  }
-  button:active {
-    background-color: #0056b3;
-  }
-  iframe {
-    width: 100%;
-    height: 40vh; /* viewport height */
-    margin-top: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-</style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+    }
+    textarea {
+      width: 100%;
+      height: 35vh;
+      font-family: monospace;
+      font-size: 1rem;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+      background: #fff;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      font-size: 1.1rem;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:active {
+      background-color: #0056b3;
+    }
+    iframe {
+      width: 100%;
+      height: 40vh;
+      margin-top: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fff;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Offline HTML Code Runner</h1>
+  <h1>Offline HTML Code Runner</h1>
 
-<textarea id="code" placeholder="Type your HTML code here...">
+  <textarea id="code" placeholder="Type your HTML code here...">
 <!DOCTYPE html>
 <html>
 <head><title>Test</title></head>
@@ -67,19 +70,19 @@
 <p>This is a sample HTML output.</p>
 </body>
 </html>
-</textarea>
+  </textarea>
 
-<button onclick="runCode()">Run Code</button>
+  <button onclick="runCode()">▶️ Run Code</button>
 
-<iframe id="output"></iframe>
+  <iframe id="output"></iframe>
 
-<script>
-function runCode() {
-  const code = document.getElementById('code').value;
-  const iframe = document.getElementById('output');
-  iframe.srcdoc = code;
-}
-</script>
+  <script>
+    function runCode() {
+      const code = document.getElementById('code').value;
+      const iframe = document.getElementById('output');
+      iframe.srcdoc = code;
+    }
+  </script>
 
 </body>
 </html>
